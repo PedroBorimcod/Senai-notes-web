@@ -1,6 +1,6 @@
 * {
-    padding: 0;
-    margin: 0;
+    padding: 0px;     
+    margin: 0px;
     box-sizing: border-box;
   }
   
@@ -48,8 +48,11 @@
   }
   
   .login-container p {
-    font-size: 18px;
+    font-size: 14px;
     margin-bottom: 20px;
+    opacity: 0.5;
+    display:flex;
+    text-align: center;
   }
   
   .login-container h2 {
@@ -125,8 +128,10 @@
   }
   .icon{
     display: flex;
-    margin-right: 410px;
     opacity: 0.5;
+    text-align: left;
+    
+  
   }
   .link{
     text-decoration: none;
