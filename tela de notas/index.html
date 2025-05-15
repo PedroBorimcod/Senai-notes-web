@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="notescreen.css">
+</head>
+<body>
+    <div class="app">
+        <aside class="sidebar">
+          <img src="../assets/imgs/Logo Wrapper.png" alt="senainotes">
+          <nav>
+            <button class="nav-btn active">All Notes</button>
+            <button class="nav-btn">Archived Notes</button>
+          </nav>
+          <div class="tags">
+            <h3>Tags</h3>
+            <ul>
+              <li>Cooking</li>
+              <li>Dev</li>
+              <li>Fitness</li>
+              <li>Health</li>
+              <li>Personal</li>
+              <li>React</li>
+              <li>Recipes</li>
+              <li>Shopping</li>
+              <li>Travel</li>
+              <li>TypeScript</li>
+            </ul>
+          </div>
+        </aside>
+    
+        <main class="notes-panel">
+          <div class="notes-list">
+            <button class="create-note">+ Create New Note</button>
+            <ul>
+              <li class="note-item active">
+                <img src="https://via.placeholder.com/40" alt="React" />
+                <div>
+                  <strong>React Performance Optimization</strong>
+                  <p class="meta">Dev, React · 29 Oct 2024</p>
+                </div>
+              </li>
+              <li class="note-item">
+                <img src="https://via.placeholder.com/40" alt="Japan" />
+                <div>
+                  <strong>Japan Travel Planning</strong>
+                  <p class="meta">Travel, Personal · 28 Oct 2024</p>
+                </div>
+              </li>
+              <!-- Adicione outras notas aqui se quiser -->
+            </ul>
+          </div>
+    
+          <div class="note-view">
+            <img class="note-img" src="https://via.placeholder.com/600x150" alt="React code" />
+            <h1>React Performance Optimization</h1>
+            <p class="tags">Tags: <span>Dev</span>, <span>React</span></p>
+            <p class="last-edited">Last edited: 29 Oct 2024</p>
+    
+            <div class="note-content">
+            </div>
+    
+            <div class="note-actions">
+              <button class="save-btn">Save Note</button>
+              <button class="cancel-btn">Cancel</button>
+              <button class="archive-btn">Archive Note</button>
+              <button class="delete-btn">Delete Note</button>
+            </div>
+          </div>
+        </main>
+      </div>
+    </body>
+    </html>
+    
+</body>
+</html>

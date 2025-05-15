@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background: #f3f4f6;
+    color: #1f2937;
+  }
+  
+  .app {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 220px;
+    background: #ffffff;
+    border-right: 1px solid #e5e7eb;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .sidebar img{
+        display: flex;
+        
+
+  }
+  
+  .sidebar h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #111827;
+  }
+  
+  .sidebar .nav-btn {
+    background: none;
+    border: none;
+    padding: 8px 0;
+    font-size: 14px;
+    text-align: left;
+    color: #374151;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+  
+  .sidebar .nav-btn.active,
+  .sidebar .nav-btn:hover {
+    color: #2563eb;
+    font-weight: 600;
+  }
+  
+  .sidebar .tags h3 {
+    font-size: 13px;
+    color: #6b7280;
+    margin-bottom: 4px;
+  }
+  
+  .sidebar .tags ul {
+    list-style: none;
+    font-size: 14px;
+    color: #374151;
+  }
+  
+  .sidebar .tags ul li {
+    margin-bottom: 6px;
+  }
+  
+  /* Notes Panel */
+  .notes-panel {
+    display: flex;
+    flex: 1;
+  }
+  
+  /* Notes List */
+  .notes-list {
+    width: 280px;
+    background: #f9fafb;
+    border-right: 1px solid #e5e7eb;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .create-note {
+    background: #3b82f6;
+    color: white;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .create-note:hover {
+    background: #2563eb;
+  }
+  
+  .note-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px;
+    border-radius: 6px;
+    transition: background 0.2s;
+    cursor: pointer;
+  }
+  
+  .note-item.active {
+    background: #e0f2fe;
+  }
+  
+  .note-item img {
+    width: 42px;
+    height: 42px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .note-item strong {
+    font-size: 14px;
+    color: #111827;
+  }
+  
+  .note-item .meta {
+    font-size: 12px;
+    color: #6b7280;
+  }
+  
+  /* Note View */
+  .note-view {
+    flex: 1;
+    padding: 24px;
+    overflow-y: auto;
+    background: #ffffff;
+  }
+  
+  .note-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 20px;
+  }
+  
+  .note-view h1 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  
+  .note-view .tags {
+    font-size: 14px;
+    margin-bottom: 4px;
+    color: #6b7280;
+  }
+  
+  .note-view .tags span {
+    background: #e0f2fe;
+    color: #2563eb;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-right: 6px;
+    font-size: 13px;
+  }
+  
+  .last-edited {
+    font-size: 12px;
+    color: #9ca3af;
+    margin-bottom: 20px;
+  }
+  
+  .note-content pre {
+    background: #f3f4f6;
+    padding: 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    line-height: 1.6;
+    white-space: pre-wrap;
+    border: 1px dashed #d1d5db;
+    margin-bottom: 20px;
+  }
+  
+  /* Buttons */
+  .note-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .note-actions button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .save-btn {
+    background: #2563eb;
+    color: white;
+  }
+  
+  .save-btn:hover {
+    background: #1e40af;
+  }
+  
+  .cancel-btn {
+    background: #e5e7eb;
+    color: #374151;
+  }
+  
+  .cancel-btn:hover {
+    background: #d1d5db;
+  }
+  
+  .archive-btn {
+    background: #f59e0b;
+    color: white;
+  }
+  
+  .archive-btn:hover {
+    background: #d97706;
+  }
+  
+  .delete-btn {
+    background: #ef4444;
+    color: white;
+  }
+  
+  .delete-btn:hover {
+    background: #b91c1c;
+  }
+  

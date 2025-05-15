@@ -128,8 +128,10 @@
   }
   .icon{
     display: flex;
-    opacity: 0.5;
+    opacity: 0.3;
     text-align: left;
+    gap: 10px;
+    margin-right: 410px;
     
   
   }
