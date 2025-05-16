@@ -1,78 +1,97 @@
 <!DOCTYPE html>
-<html lang="pr-br">
+<html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="notescreen.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Senai Notes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="notescreen.css">
 </head>
+
 <body>
-    <div class="app">
-        <aside class="sidebar">
-          <img src="../assets/imgs/Logo Wrapper.png" alt="senainotes">
-          <nav>
-            <button class="nav-btn active">All Notes</button>
-            <button class="nav-btn">Archived Notes</button>
-          </nav>
-          <div class="tags">
-            <h3>Tags</h3>
-            <ul>
-              <li>Cooking</li>
-              <li>Dev</li>
-              <li>Fitness</li>
-              <li>Health</li>
-              <li>Personal</li>
-              <li>React</li>
-              <li>Recipes</li>
-              <li>Shopping</li>
-              <li>Travel</li>
-              <li>TypeScript</li>
-            </ul>
-          </div>
-        </aside>
-    
-        <main class="notes-panel">
-          <div class="notes-list">
-            <button class="create-note">+ Create New Note</button>
-            <ul>
-              <li class="note-item active">
-                <img src="https://via.placeholder.com/40" alt="React" />
-                <div>
-                  <strong>React Performance Optimization</strong>
-                  <p class="meta">Dev, React · 29 Oct 2024</p>
-                </div>
-              </li>
-              <li class="note-item">
-                <img src="https://via.placeholder.com/40" alt="Japan" />
-                <div>
-                  <strong>Japan Travel Planning</strong>
-                  <p class="meta">Travel, Personal · 28 Oct 2024</p>
-                </div>
-              </li>
-              <!-- Adicione outras notas aqui se quiser -->
-            </ul>
-          </div>
-    
-          <div class="note-view">
-            <img class="note-img" src="https://via.placeholder.com/600x150" alt="React code" />
-            <h1>React Performance Optimization</h1>
-            <p class="tags">Tags: <span>Dev</span>, <span>React</span></p>
-            <p class="last-edited">Last edited: 29 Oct 2024</p>
-    
-            <div class="note-content">
+  <aside>
+    <div class="logo"><img src="../assets/imgs/Logo Wrapper.png" alt=""></div>
+    <div class="sidebar-section">
+      <div class="sidebar-item"><img src="../assets/imgs/Home.svg" alt=""> All Notes</div>
+      <div class="sidebar-item"><img src="../assets/imgs/Archive.png" alt=""> Archived Notes</div>
+    </div>
+    <div class="sidebar-section">
+      <h4>Tags</h4>
+      <div class="sidebar-item"><img src="../assets/imgs/Tag.png" alt=""> Cooking</div>
+      <div class="sidebar-item"><img src="../assets/imgs/Tag.png" alt=""> Dev</div>
+      <div class="sidebar-item"><img src="../assets/imgs/Tag.png" alt=""> Fitness</div>
+      <div class="sidebar-item"><img src="../assets/imgs/Tag.png" alt=""> Health</div>
+      <div class="sidebar-item"><img src="../assets/imgs/Tag.png" alt=""> Personal</div>
+      <div class="sidebar-item"><img src="../assets/imgs/Tag.png" alt=""> React</div>
+      <div class="sidebar-item"><img src="../assets/imgs/Tag.png" alt=""> Recipes</div>
+      <div class="sidebar-item"><img src="../assets/imgs/Tag.png" alt=""> Shopping</div>
+      <div class="sidebar-item"><img src="../assets/imgs/Tag.png" alt=""> Travel</div>
+      <div class="sidebar-item"><img src="../assets/imgs/Tag.png" alt=""> TypeScript</div>
+    </div>
+  </aside>
+
+  <main>
+    <header>
+      <h1>All Notes</h1>
+      <input type="text" placeholder="Search by title, content, or tags...">
+    </header>
+
+    <div class="content">
+      <div class="notes-list">
+        <button>+ Create New Note</button>
+
+        <div class="note-item">
+          <img src="../assets/imgs/Rectangle 45.png" alt="Thumbnail">
+          <div class="note-info">
+            <strong>React Performance Op...</strong>
+            <div class="tags">
+              <div class="tag">Dev</div>
+              <div class="tag">React</div>
             </div>
-    
-            <div class="note-actions">
-              <button class="save-btn">Save Note</button>
-              <button class="cancel-btn">Cancel</button>
-              <button class="archive-btn">Archive Note</button>
-              <button class="delete-btn">Delete Note</button>
-            </div>
+            <small>29 Oct 2024</small>
           </div>
-        </main>
+        </div>
+
+        <!-- Outros itens podem ser adicionados aqui -->
       </div>
-    </body>
-    </html>
-    
+
+      <div class="note-detail">
+        <img src="../assets/imgs/Rectangle 44.png" alt="Note banner" />
+        <h2>React Performance Optimization</h2>
+        <div class="meta">📁 Tags: Dev, React • 🕒 Last edited: 29 Oct 2024</div>
+
+        <pre>
+Key performance optimization techniques:
+
+1. Code Splitting
+- Use React.lazy() for route-based splitting
+- Implement dynamic imports for heavy components
+
+2. Memoization
+- useMemo for expensive calculations
+- useCallback for function props
+- React.memo for component optimization
+
+3. Virtual List Implementation
+- Use react-window for long lists
+- Implement infinite scrolling
+
+TODO: Benchmark current application and identify bottlenecks
+        </pre>
+
+        <footer>
+          <button class="save">Save Note</button>
+          <button class="cancel">Cancel</button>
+        </footer>
+      </div>
+
+      <div class="note-actions">
+        <button>🗃️ Archive Note</button>
+        <button>🗑️ Delete Note</button>
+      </div>
+    </div>
+  </main>
 </body>
+
 </html>
