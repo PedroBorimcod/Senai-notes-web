@@ -20,12 +20,11 @@ aside {
 }
 
 .logo {
-  font-weight: bold;
-  font-size: 20px;
-  margin-bottom: 30px;
+  height: 30px;
+  width: 157px;
+  gap: 10px;
   display: flex;
-  align-items: center;
-  gap: 8px;
+  transform: translateX(-50px);
 }
 
 .sidebar-section {
@@ -67,9 +66,10 @@ header {
 
 header input {
   width: 300px;
-  padding: 8px 12px;
+  padding: 12px 12px;
   border: 1px solid #d1d5db;
   border-radius: 6px;
+  text-align: center;
 }
 
 .content {
@@ -103,6 +103,12 @@ header input {
   margin-bottom: 16px;
   gap: 10px;
   cursor: pointer;
+}
+
+.note-item h6 {
+
+  font-size: 16px;
+
 }
 
 .note-item img {
@@ -150,9 +156,9 @@ header input {
 }
 
 .meta {
-  color: #6b7280;
   font-size: 14px;
-  margin-bottom: 20px;
+  display: flex;
+  gap: 5px;
 }
 
 .note-detail pre {
@@ -200,8 +206,44 @@ footer button {
   border-radius: 6px;
   margin-bottom: 10px;
   cursor: pointer;
+  display: flex;
+  text-align: center;
+  gap: 10px;
+  justify-content: center;
 }
 
 .note-actions button:hover {
   background: #e5e7eb;
+}
+
+.ins{
+display: flex;
+
+}
+
+.ins input {
+  width: 100%;
+  height: 47vh;
+  padding-bottom: 447px;
+  padding-left: 15px;
+
+}
+.meta img{
+    max-width: min-content;
+    height: 20px;
+    display: flex;
+}
+.pesq{
+  margin-left: 50vw;
+  display: flex;
+  transform: translateX(70px);
+}
+.meta input{
+  display: flex;
+  height: 30px;
+  width: 100%;
+  border: none;
+  border-bottom: none;
+  gap: 10px;
+  
 }

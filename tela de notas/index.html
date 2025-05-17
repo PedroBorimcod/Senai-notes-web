@@ -32,15 +32,21 @@
   </aside>
 
   <main>
-    <header>
+    <header class="header">
       <h1>All Notes</h1>
-      <input type="text" placeholder="Search by title, content, or tags...">
+      <img src="../assets/imgs/Search.png" alt="" class="pesq"><input type="text"
+        placeholder="Search by title, content, or tags...">
+      <img src="../assets/imgs/Setting.png" alt="configs"> <img src="../assets/imgs/Topbar Item.png" alt="">
     </header>
 
     <div class="content">
       <div class="notes-list">
         <button>+ Create New Note</button>
 
+        <div class="note-item">
+          <img src="../assets/imgs/Rectangle 44 (1).png" alt="Thumbnail">
+          <h6>Untitled Note</h6>
+        </div>
         <div class="note-item">
           <img src="../assets/imgs/Rectangle 45.png" alt="Thumbnail">
           <div class="note-info">
@@ -53,32 +59,33 @@
           </div>
         </div>
 
+        <div class="note-item">
+          <img src="../assets/imgs/Rectangle 45 (1).png" alt="Thumbnail">
+          <div class="note-info">
+            <strong>Japan Travel Planning</strong>
+            <div class="tags">
+              <div class="tag">Travel</div>
+              <div class="tag">Personal</div>
+            </div>
+            <small>28 Oct 2024</small>
+          </div>
+        </div>
+
         <!-- Outros itens podem ser adicionados aqui -->
       </div>
 
       <div class="note-detail">
-        <img src="../assets/imgs/Rectangle 44.png" alt="Note banner" />
-        <h2>React Performance Optimization</h2>
-        <div class="meta">📁 Tags: Dev, React • 🕒 Last edited: 29 Oct 2024</div>
+        <img src="../assets/imgs/Rectangle 44 (1).png" alt="Note banner" />
+        <h2>Enter a title…</h2>
+        <div class="meta"><img src="../assets/imgs/Tag.png" alt=""> Tags:<input type="text"
+            placeholder="Add tags separated by commas (e.g. Work, Planning)" class="text-input"></div>
+        <div class="meta"><img src="../assets/imgs/Circle Clock.png" alt=""> Last edited:<input type="text"
+            placeholder="Not yet saved" class="text-input"></div>
 
-        <pre>
-Key performance optimization techniques:
-
-1. Code Splitting
-- Use React.lazy() for route-based splitting
-- Implement dynamic imports for heavy components
-
-2. Memoization
-- useMemo for expensive calculations
-- useCallback for function props
-- React.memo for component optimization
-
-3. Virtual List Implementation
-- Use react-window for long lists
-- Implement infinite scrolling
-
-TODO: Benchmark current application and identify bottlenecks
-        </pre>
+            
+        <div class="ins">
+          <input type="text" placeholder="Start typing your note here…">
+        </div>
 
         <footer>
           <button class="save">Save Note</button>
@@ -87,8 +94,8 @@ TODO: Benchmark current application and identify bottlenecks
       </div>
 
       <div class="note-actions">
-        <button>🗃️ Archive Note</button>
-        <button>🗑️ Delete Note</button>
+        <button><img src="../assets/imgs/Archive.png" alt=""> Archive Note</button>
+        <button><img src="../assets/imgs/Delete.png" alt=""> Delete Note</button>
       </div>
     </div>
   </main>
